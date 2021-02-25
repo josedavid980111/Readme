@@ -8,7 +8,7 @@ Las funcionalidades con las que cuenta son:
     5. Agregar amigo, maestro o personal administrativo
     6. Cerrar sesión
 
-![Alt text](https://github.com/Ingenieria-de-Software-ITAM-2020/Halcones_Galacticos/blob/main/Imagenes/10.png "Optional Title")
+![Alt text](https://github.com/josedavid980111/Readme/blob/main/Imagenes/10.png "Optional Title")
 
 1. Requisitos preliminares
     1. Encender el dispositivo en el que accederás a la aplicación.
@@ -26,7 +26,7 @@ Instructivo:
             1. Escribe tu correo del ITAM en el campo correspondiente y haz click en "Recuperar".
             1. A continuación puedes revisar tu correo electrónico, te mandaremos un enlace para que realices el cambio de contraseña.
  
-![Alt text](https://github.com/Ingenieria-de-Software-ITAM-2020/Halcones_Galacticos/blob/main/Imagenes/1.png "Optional Title")
+![Alt text](https://github.com/josedavid980111/Readme/blob/main/Imagenes/1.png "Optional Title")
 
  1. Chat
  
@@ -60,7 +60,7 @@ Instructivo:
         1. En esta ventana selecciona los archivos que desees subir, puedes arrastrar los archivos hasta esa ventana, o presionar el botón de seleccionar, lo que abrirá el explorador de archivos de tu computadora.
        1. Una vez seleccionado tus archivos, presiona en el botón de "Enviar" para mandar el contenido seleccionado.
        
-   ![Alt text](https://github.com/Ingenieria-de-Software-ITAM-2020/Halcones_Galacticos/blob/main/Imagenes/3.png "Optional Title")
+   ![Alt text](https://github.com/josedavid980111/Readme/blob/main/Imagenes/3.png "Optional Title")
     
 1. Búsqueda de Usuarios
 
@@ -75,10 +75,10 @@ Instructivo:
     1. Cuando encuentres a la persona deseada, selecciona la flecha que está a la derecha de su nombre, esto mandará una solicitud de comunicación y te informará del estatus de la acción.
        * Si regresas a la pantalla principal (chat) y saldrá esa persona al principio de tu lista de conversaciones, junto con un ícono que indica que se ha enviado una solicitud de conversación. Una vez que ese usuario haya aprobado tu solicitud, ambos podran ponerse en contacto.
      
-        ![Alt text](https://github.com/Ingenieria-de-Software-ITAM-2020/Halcones_Galacticos/blob/main/Imagenes/6.png "Optional Title")
+        ![Alt text](https://github.com/josedavid980111/Readme/blob/main/Imagenes/6.png "Optional Title")
  
  1. Cerrar sesión.
      1. Cuando desees cerrar tu sesión, ubica en la esquina superior derecha un ícono de nuestro usuario.
      1. Haz click para abrir el menú de usuario.
      1. Selecciona "Cerrar sesión.
-![Alt text](https://github.com/Ingenieria-de-Software-ITAM-2020/Halcones_Galacticos/blob/main/Imagenes/8.png "Optional Title")
+![Alt text](https://github.com/josedavid980111/Readme/blob/main/Imagenes/8.png "Optional Title")
