@@ -1,4 +1,7 @@
 # Readme
+
+https://github.com/josedavid980111/Readme/blob/main/README.md
+
 El proyecto consiste en una aplicación que web, con el fin de mejorar la comunicación estudiantil del ITAM, asi como su comunicación con maestros y servicios escolares.
 Las funcionalidades con las que cuenta son: 
     1. Inicio de sesión
