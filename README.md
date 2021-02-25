@@ -1,5 +1,6 @@
-# Instructivo de Comunicación Colmillo
-
+# Readme
+El proyecto consiste en una aplicación que web con el fin de mejorar la comunicación estdiantil del ITAM, asi como su comunicación con maestros y servicios escolares.
+Aplicaciones preeliminares
 
 1. Preliminares
     1. Encender el dispositivo en el que accederás a la aplicación.
@@ -15,6 +16,7 @@
             1. Escribe tu correo del ITAM en el campo correspondiente y haz click en "Recuperar".
             1. A continuación puedes revisar tu correo electrónico, te mandaremos un enlace para que realices el cambio de contraseña.
  
+![Alt text](https://github.com/Ingenieria-de-Software-ITAM-2020/Halcones_Galacticos/blob/main/Imagenes/2.png "Optional Title")
  
  1. Chat
  
