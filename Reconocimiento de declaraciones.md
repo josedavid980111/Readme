@@ -37,6 +37,7 @@ El nombre del archivo de ser unicamente el nombre, sin agregar .txt al final.
 3. Después comenzamos un for que ira recorriendo primero los tipos que no son arreglos, como lo son "int", "String", "float", "Integer", "double", "char", "byte", "boolean" y "long", en cada uno ira checando si existe alguna parte donde se encuentre la palabra del tipo máss algunos otros caracteres, e incluso checara si existe algun igual, coma, etc. hasta llegar al final de la linea de declaracion de esas variables, esto porque se pueden declarar mas de una variable en una misma linea.
 
 ![Programa1](./Imagenes/2.png)
+
 4. A continuación como el for nos arreojara toda la linea, tendremoss que filtrarla para obetner unicamente el nombre de las variables, el problema aqui es que si existe alguna variable de tipo arreglo dentro de esta linea se guardara por el momento como del tipo que se define en esa linea.
 
 ![Programa1](./Imagenes/3.png)
