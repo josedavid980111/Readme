@@ -1,87 +1,64 @@
-# Readme
+# Proyecto 1: Reconocimiento de declaraciones
 
-https://github.com/josedavid980111/Readme/blob/main/README.md
+## Estudiante: 
 
-El proyecto consiste en una aplicación que web, con el fin de mejorar la comunicación estudiantil del ITAM, asi como su comunicación con maestros y servicios escolares.
-Las funcionalidades con las que cuenta son: 
-    1. Inicio de sesión
-    2. Olvide mi contraseña
-    3. Mandar mensaje
-    4. Seleccionar contacto
-    5. Agregar amigo, maestro o personal administrativo
-    6. Cerrar sesión
 
-![Alt text](https://github.com/josedavid980111/Readme/blob/main/Imagenes/10.png "Optional Title")
+* José David Barranco Camacho
 
-1. Requisitos preliminares
-    1. Encender el dispositivo en el que accederás a la aplicación.
-    1. Configurar tu conexión a internet y/o verificar la conectividad.
-    1. Abrir el navegador web de tu preferencia.
-    1. Ingresar al portal de [Comunicación Colmillo](https://pr.to/9Q0PLU/).
+## Programa desarrollado
 
-Instructivo:
+El programa utiliza el paquete de expresiones regulares en Python para reconocer todas las posibles declaraciones de variables del leguaje Java (versión 8). 
 
-1. Iniciar sesión
- 
-    1. Una vez cargada la página de inicio introduce tus credenciales del ITAM y haz click en  "Ingresar"
-    1. A continuación presionas en el botón "Ingresar"
-        * En caso de que no recuerdes tu contraseña, selecciona el hipervínculo llamado "Olvide mi contraseña" (Ubicado abajo del formulario de inicio de sesión)
-            1. Escribe tu correo del ITAM en el campo correspondiente y haz click en "Recuperar".
-            1. A continuación puedes revisar tu correo electrónico, te mandaremos un enlace para que realices el cambio de contraseña.
- 
-![Alt text](https://github.com/josedavid980111/Readme/blob/main/Imagenes/1.png "Optional Title")
+Los resultados que regresa son:
 
- 1. Chat
- 
-     Esta es la pantalla principal de la aplicación, consiste en: un panel lateral derecho, en él estan tus contactos, grupos y notificaciones; el contenedor central, que te permite ver la conversación seleccionada, así como redactar y enviar mensajes; y, por último, varios botones, estos permiten que crees un nuego grupo, busques un nuevo usuario o cierres sesión.
+* Número total de variables declaradas
+* Número total de tipos utilizados en las declaraciones encontradas
+* Número total de variables declaradas de cada tipo
+* Numero total de variables inicializadas
+* Número total de variables de tipo arreglo
+* Clasificación de todos los nombres de variables por tipo declarado
 
-    1. Cambiar de conversación.
-        1. Haz click en una conversación en el panel lateral izquierdo para entrar a esa plática (Sea chat simple, grupal o notificación).
-        
-        Detalles imoprtantes:
-        * Si eliges algún chat antiguo, podrás ver la conversación que habías tenido posteriormente con la persona.
-        * Si eliges un chat grupal, veras por colores a cada comentario de cada usuario.
-        * Si eliges algún administrativo, se vera la conversación igual que algún alumno o maestro.
-        * Si eliges el de alguna persona que no has agregado y te mando solicitud, te aparece un mensaje en el cual te preguntara si deseas agregarlo.
-            1. En caso de no desear agregarlo, puedes presionar que no y enseguida te aparecerá un icono en la esquina superior derecha del chat donde podrás mandarle solicitud en caso de que en un futuro desees agregarlo.
-            1. En caso de que selecciones que aceptas la solicitud de la persona, te mostrara los mensajes que te haya intentado enviar.
-    
-    1. Crear chat grupal
-    
-        1. Hacer click en la esquina superior derecha en el ícono de "más" (+).
-        1. En la lista de contactos, seleccionar las personas que se desea agregar al grupo con el ícono de "Añadir" (+).
-        1. Al terminar de agregar todos los miembros al grupo, presionar el botón de "crear", automáticamente se cerrará la ventana y aparecerá tu grupo.
-    
-    1. Mandar un mensaje.
-        1. Seleccion a el usuario al que quieres escribirle.
-        1. Escribe tu mensaje en el recuadro de texto inferior.
-        1. Haz click en el botón color verde con una flecha para enviar tu mensaje (este botón se encuentra en la esquina inferior derecha).
-    
-    1. Adjuntar un archivo.
-        1. Ubica el botón blanco con un icono de un clip, se encuentra en la esquina inferior derecha.
-        1. Presiona este botón, esto abrirá una pequeña ventana nueva.
-        1. En esta ventana selecciona los archivos que desees subir, puedes arrastrar los archivos hasta esa ventana, o presionar el botón de seleccionar, lo que abrirá el explorador de archivos de tu computadora.
-       1. Una vez seleccionado tus archivos, presiona en el botón de "Enviar" para mandar el contenido seleccionado.
-       
-   ![Alt text](https://github.com/josedavid980111/Readme/blob/main/Imagenes/3.png "Optional Title")
-    
-1. Búsqueda de Usuarios
+## Descripción
+El programa recorre la lista ResTipo1 que contiene los tipos de variables Java como son byte, float, int, boolean, entre otros. Para cada elemento de está lista revisa si existen coincidencias en el texto enviado. 
+Uno de los puntos interesantes es que se sustituyeron los espacios por comas debido a que se puede extender el programa agregándole espacio y coma. 
+Se tomó en cuenta los arreglos como un tipo de variable, en lugar de considerarlos por separado, por ejemplo, si hay un arreglo de enteros no se toma como tipo entero, sino como arreglo.
+Particularmente en el último punto, mencionado anteriormente, para el número total de variables declaradas se utilizan if's y el programa revisa si hay arrays de tipo int, float, byte, entre otras y para el número de variables usadas de las obtenidas busca si hay alguna otra coincidencia. Para este último punto mencionado tuvimos primero que obtener los arreglos que se asignaban como arreglo al definir el tipo de valor que contenían, por ejemplo int [ ] var1, var2, var3; etc.
+Esto se obtuvo iterando cada tipo de variable y obteniendo los nombres.A continuación, como la obtención de las variables por tipo distintos de arreglos arrojaba aquellos arreglos que se definían después de asignarle el nombre a la variable, por ejemplo int var1[ ], var2[ ], se tuviero que obtener aquellas variables que incluyeran los símbolos [ ] después de asignarle el nombre de la variable, para después eliminar estás variables de los tipos en dónde podían haberse metido por error.
 
-    Este feature permite buscar entre alumnos, profesores y personal administrativo.
-    
-    1. En la ventana principal del chat, hacer click al botón caracterizado con el símbolo de una lupa.
-    1. Antes de realizar la búsqueda, selecciona en la lista de la derecha el tipo de usuario que estas buscando.
-    1. Escribe el nombre, clave única o departamento de la persona que estás buscando.
-    1. Haz click en "Buscar" para cargar la lista con los resultados de tu búsqueda.
-        * En caso de querer cambiar de tipo de usuario, puedes hacer click en la lista de radio buttons para cargar automaticamente la informacion pertinente.
-       
-    1. Cuando encuentres a la persona deseada, selecciona la flecha que está a la derecha de su nombre, esto mandará una solicitud de comunicación y te informará del estatus de la acción.
-       * Si regresas a la pantalla principal (chat) y saldrá esa persona al principio de tu lista de conversaciones, junto con un ícono que indica que se ha enviado una solicitud de conversación. Una vez que ese usuario haya aprobado tu solicitud, ambos podran ponerse en contacto.
-     
-        ![Alt text](https://github.com/josedavid980111/Readme/blob/main/Imagenes/6.png "Optional Title")
- 
- 1. Cerrar sesión.
-     1. Cuando desees cerrar tu sesión, ubica en la esquina superior derecha un ícono de nuestro usuario.
-     1. Haz click para abrir el menú de usuario.
-     1. Selecciona "Cerrar sesión.
-![Alt text](https://github.com/josedavid980111/Readme/blob/main/Imagenes/8.png "Optional Title")
+
+## Utilización
+
+1. Al iniciarse el programa pedira al usuario ingresar el nombre del archivo de texto que se utilizara.
+El nombre del archivo de ser unicamente el nombre, sin agregar .txt al final.
+
+2. Inicialmente podemos ver como leemos el archivo que el usuario eligio, a continuación, debido a que el uso espacios y otros caracteres que no son tan necesarios, elegimos eliminar esos caracteres y sustituirlos por otros que facilitaran tanto la busqueda como la ovtención de los datos, un ejemplo claro son los espacios, que debido a que cada programador tiene su forma de escribir codigo pone tanto espacios como el quiera, por lo que sustituimos estos espacios por comas ya que no afecta en el funcionamiento de nuestro programa.
+
+![Programa1](./Imagenes/1.png)
+3. Después comenzamos un for que ira recorriendo primero los tipos que no son arreglos, como lo son "int", "String", "float", "Integer", "double", "char", "byte", "boolean" y "long", en cada uno ira checando si existe alguna parte donde se encuentre la palabra del tipo máss algunos otros caracteres, e incluso checara si existe algun igual, coma, etc. hasta llegar al final de la linea de declaracion de esas variables, esto porque se pueden declarar mas de una variable en una misma linea.
+
+![Programa1](./Imagenes/2.png)
+4. A continuación como el for nos arreojara toda la linea, tendremoss que filtrarla para obetner unicamente el nombre de las variables, el problema aqui es que si existe alguna variable de tipo arreglo dentro de esta linea se guardara por el momento como del tipo que se define en esa linea.
+
+![Programa1](./Imagenes/3.png)
+
+5. En seguida comenzaremos a buscar todas aquellas variabless que contengan un [], conforme vayamos encontrando las variables, iremos sacandolas de las que anteriormente habiamos guardado según el tipo de la linea en la que se encontraban.
+
+![Programa1](./Imagenes/4.png)
+
+6. Continuando con la busqueda de variables, comenzaremos a hacer lo mismo que hicimos en el punto 3, pero ahora con el tipo arreglo, y debido a que ya tenemos aquellos nombres de arreglos que se encontraban en algunas lineas de ciertos tipos de variables, nos enfocaremos ahora en aquellos que se definen como arreglos despues de asignar el tipo de variable que es, un ejemplo es int[] var1, esta variable se le define como arreglo despues de elegir el tipo de valor que contendra.
+7. Para esto haremos lo mismo que en el punto 3, solo que la diferencia sera que buscaremos aquellas variables que ya no solo empiecen con int, sino que contengan [] despues de el tipo de valor.
+
+![Programa1](./Imagenes/5.png)
+
+8. Para finalmente llegar al punto final, en el cual unicamente nos dedicaremos a contar las variables existentes en cada tipo, e imprimir los nombres de cada variable existente. También, teniendo los nombres de las variables existentes, nos pondremos a buscar cuales estan inicializadas, esto lo haremos a traves de un codigo que buscara aquellas lineas que inicien con algun tipo de variable y terminen con el nombre de las variables que tenemos seguido de un signo de igual, para finalmente terminar sabiendo cuantas variables fueron inicializadas.
+
+![Programa1](./Imagenes/6.png)
+
+![Programa1](./Imagenes/7.png)
+
+![Programa1](./Imagenes/8.png)
+
+
+9. Para tener como resultado, en nuestro ejemplo, lo siguiente:
+
+![Programa1](./Imagenes/9.png)
